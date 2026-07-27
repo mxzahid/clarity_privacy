@@ -1,0 +1,584 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Clarity Privacy Policy and Terms of Service.">
+  <meta name="theme-color" content="#faf6ee">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; base-uri 'none'; form-action 'none'; frame-ancestors 'none'">
+  <title>Legal · Clarity</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #faf6ee;
+      --paper-lower: #f0e9da;
+      --paper-card: #fffdf8;
+      --ink: #26231d;
+      --ink-soft: #575247;
+      --ink-quiet: #6e685c;
+      --brass: #8a6a25;
+      --brass-strong: #b08d3e;
+      --rule: rgba(38, 35, 29, 0.16);
+      --focus: #0a5f9e;
+      --content: 72ch;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 5rem;
+    }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at 18% -8%, rgba(176, 141, 62, 0.13), transparent 28rem),
+        var(--paper);
+      color: var(--ink);
+      font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 1rem;
+      line-height: 1.68;
+      text-rendering: optimizeLegibility;
+    }
+
+    a {
+      color: var(--brass);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.18em;
+    }
+
+    a:hover { color: #624912; }
+
+    a:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 4px;
+      border-radius: 4px;
+    }
+
+    .skip-link {
+      position: fixed;
+      top: 0.75rem;
+      left: 0.75rem;
+      z-index: 10;
+      padding: 0.65rem 0.85rem;
+      background: var(--ink);
+      color: var(--paper-card);
+      transform: translateY(-180%);
+    }
+
+    .skip-link:focus { transform: translateY(0); }
+
+    .masthead {
+      position: sticky;
+      top: 0;
+      z-index: 4;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 4.25rem;
+      padding: 0 5vw;
+      border-bottom: 1px solid var(--rule);
+      background: rgba(250, 246, 238, 0.96);
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.7rem;
+      color: var(--ink);
+      font-family: ui-serif, Georgia, Cambria, "Times New Roman", serif;
+      font-size: 1.15rem;
+      font-weight: 650;
+      text-decoration: none;
+    }
+
+    .brand-mark {
+      width: 1.1rem;
+      height: 1.1rem;
+      border: 1px solid rgba(38, 35, 29, 0.24);
+      border-radius: 50%;
+      background: var(--brass-strong);
+      box-shadow: inset -3px -4px 0 rgba(38, 35, 29, 0.12);
+    }
+
+    .masthead nav {
+      display: flex;
+      gap: clamp(0.9rem, 2.5vw, 2rem);
+      font-size: 0.9rem;
+      font-weight: 650;
+    }
+
+    .masthead nav a {
+      color: var(--ink-soft);
+      text-decoration: none;
+    }
+
+    .masthead nav a:hover { color: var(--ink); }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(15rem, 23rem);
+      gap: clamp(2rem, 7vw, 8rem);
+      max-width: 76rem;
+      margin: 0 auto;
+      padding: clamp(4.5rem, 10vw, 8.5rem) 5vw clamp(3.5rem, 8vw, 6rem);
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .hero h1 {
+      max-width: 13ch;
+      margin: 0;
+      font-family: ui-serif, Georgia, Cambria, "Times New Roman", serif;
+      font-size: clamp(3rem, 8vw, 5.8rem);
+      font-weight: 500;
+      letter-spacing: -0.035em;
+      line-height: 0.98;
+      text-wrap: balance;
+    }
+
+    .hero-copy {
+      align-self: end;
+      max-width: 34rem;
+    }
+
+    .hero-copy p {
+      margin: 0;
+      color: var(--ink-soft);
+      font-size: 1.06rem;
+      text-wrap: pretty;
+    }
+
+    .updated {
+      display: block;
+      margin-top: 1.25rem;
+      color: var(--brass);
+      font-family: ui-serif, Georgia, Cambria, "Times New Roman", serif;
+      font-size: 0.95rem;
+      font-style: italic;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 13rem minmax(0, var(--content));
+      gap: clamp(3rem, 8vw, 8rem);
+      max-width: 76rem;
+      margin: 0 auto;
+      padding: clamp(3.5rem, 7vw, 6.5rem) 5vw 8rem;
+    }
+
+    .contents {
+      align-self: start;
+      position: sticky;
+      top: 6rem;
+    }
+
+    .contents p {
+      margin: 0 0 0.75rem;
+      color: var(--ink-quiet);
+      font-size: 0.82rem;
+      font-weight: 700;
+    }
+
+    .contents a {
+      display: block;
+      padding: 0.55rem 0;
+      border-top: 1px solid var(--rule);
+      color: var(--ink-soft);
+      font-size: 0.92rem;
+      text-decoration: none;
+    }
+
+    .contents a:last-child { border-bottom: 1px solid var(--rule); }
+    .contents a:hover { color: var(--ink); }
+
+    article + article {
+      margin-top: clamp(6rem, 13vw, 11rem);
+      padding-top: clamp(4rem, 9vw, 7rem);
+      border-top: 2px solid var(--ink);
+    }
+
+    article > header {
+      margin-bottom: clamp(3rem, 7vw, 5.5rem);
+    }
+
+    article h2 {
+      margin: 0;
+      font-family: ui-serif, Georgia, Cambria, "Times New Roman", serif;
+      font-size: clamp(2.35rem, 5.5vw, 4.2rem);
+      font-weight: 520;
+      letter-spacing: -0.03em;
+      line-height: 1.04;
+      text-wrap: balance;
+    }
+
+    .lede {
+      max-width: 60ch;
+      margin: 1.2rem 0 0;
+      color: var(--ink-soft);
+      font-size: 1.08rem;
+      text-wrap: pretty;
+    }
+
+    .legal-section {
+      display: grid;
+      grid-template-columns: minmax(10rem, 15rem) minmax(0, 1fr);
+      gap: clamp(1.4rem, 4vw, 3.5rem);
+      padding: 2rem 0;
+      border-top: 1px solid var(--rule);
+      scroll-margin-top: 6rem;
+    }
+
+    .legal-section h3 {
+      margin: 0;
+      font-family: ui-serif, Georgia, Cambria, "Times New Roman", serif;
+      font-size: 1.18rem;
+      font-weight: 650;
+      letter-spacing: -0.012em;
+      line-height: 1.35;
+      text-wrap: balance;
+    }
+
+    .legal-section p {
+      margin: 0;
+      color: var(--ink-soft);
+      text-wrap: pretty;
+    }
+
+    .legal-section p + p { margin-top: 1rem; }
+
+    .contact-line {
+      display: inline-block;
+      margin-top: 0.8rem;
+      font-weight: 700;
+    }
+
+    footer {
+      padding: 2.2rem 5vw;
+      border-top: 1px solid var(--rule);
+      background: var(--paper-lower);
+      color: var(--ink-quiet);
+      font-size: 0.9rem;
+      text-align: center;
+    }
+
+    @media (max-width: 760px) {
+      html { scroll-padding-top: 4.5rem; }
+
+      .masthead {
+        min-height: 3.9rem;
+        padding-inline: 1rem;
+      }
+
+      .masthead nav { gap: 0.9rem; }
+
+      .hero {
+        grid-template-columns: 1fr;
+        padding-inline: 1.25rem;
+      }
+
+      .hero h1 { font-size: clamp(2.9rem, 16vw, 4.5rem); }
+
+      .layout {
+        display: block;
+        padding: 3rem 1.25rem 6rem;
+      }
+
+      .contents {
+        position: static;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.7rem;
+        margin-bottom: 4.5rem;
+      }
+
+      .contents p { grid-column: 1 / -1; }
+
+      .contents a,
+      .contents a:last-child {
+        padding: 0.7rem;
+        border: 1px solid var(--rule);
+        border-radius: 8px;
+        text-align: center;
+      }
+
+      .legal-section {
+        display: block;
+        padding: 1.7rem 0 1.9rem;
+      }
+
+      .legal-section h3 { margin-bottom: 0.65rem; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+    @media print {
+      body { background: white; font-size: 10.5pt; }
+      .masthead, .contents, .skip-link { display: none; }
+      .hero, .layout { display: block; max-width: none; padding: 1.2cm 1.4cm; }
+      .hero { border-bottom: 1px solid #777; }
+      .hero h1 { font-size: 34pt; }
+      article + article { break-before: page; }
+      .legal-section { grid-template-columns: 4.5cm 1fr; gap: 0.8cm; break-inside: avoid; }
+      a { color: inherit; text-decoration: none; }
+      footer { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to legal documents</a>
+
+  <header class="masthead">
+    <a class="brand" href="#top" aria-label="Clarity legal home">
+      <span class="brand-mark" aria-hidden="true"></span>
+      Clarity
+    </a>
+    <nav aria-label="Legal documents">
+      <a href="#privacy">Privacy</a>
+      <a href="#terms">Terms</a>
+    </nav>
+  </header>
+
+  <div class="hero" id="top">
+    <h1>Clear terms. Private by design.</h1>
+    <div class="hero-copy">
+      <p>These documents explain what Clarity does with conversation screenshots and account data, and the rules that apply when you use the service.</p>
+      <span class="updated">Effective and last updated July 26, 2026</span>
+    </div>
+  </div>
+
+  <div class="layout">
+    <aside class="contents" aria-label="On this page">
+      <p>On this page</p>
+      <a href="#privacy">Privacy Policy</a>
+      <a href="#terms">Terms of Service</a>
+    </aside>
+
+    <main id="main">
+      <article id="privacy" aria-labelledby="privacy-title">
+        <header>
+          <h2 id="privacy-title">Privacy Policy</h2>
+          <p class="lede">Clarity analyzes sensitive conversation screenshots. This policy describes the information involved, the companies that process it, how long it is kept, and the choices available to you.</p>
+        </header>
+
+        <section class="legal-section" id="privacy-scope">
+          <h3>Scope</h3>
+          <p>This Privacy Policy explains how Clarity (“Clarity,” “we,” “us,” or “our”) collects, uses, discloses, and retains information when you use the Clarity iOS app, related support, and backend service. Clarity creates an account automatically but does not require your legal name, email address, contacts, or a social login.</p>
+        </section>
+
+        <section class="legal-section" id="privacy-provided">
+          <h3>Information you provide</h3>
+          <p>We collect the screenshots you select, the name or label you assign to the other person, optional backstory, referral codes, support messages, and onboarding answers such as age, identity, relationship situation, attachment style, intent, whether you asked friends, and how you heard about Clarity. Screenshots may contain names, phone numbers, profile images, message content, and other information about you and another person.</p>
+        </section>
+
+        <section class="legal-section" id="privacy-created">
+          <h3>Information Clarity creates</h3>
+          <p>We create and store a transcript and analysis of the submitted conversation, including messages, signal labels, summaries, advice, verdicts, counts, detected platform and language, safety classifications, and a compact summary of a prior read when you analyze the same person again.</p>
+        </section>
+
+        <section class="legal-section" id="privacy-account">
+          <h3>Account, purchase, and referral data</h3>
+          <p>We collect a random user ID, support ID, invite code, authentication tokens, App Attest and DeviceCheck security data, referral relationships and rewards, and purchase records such as App Store transaction and product IDs, subscription status, renewal or expiration dates, and refund or revocation status. Apple handles your payment card and billing details; Clarity does not receive them.</p>
+        </section>
+
+        <section class="legal-section" id="privacy-usage">
+          <h3>Usage and device data</h3>
+          <p>We and PostHog collect product events such as screens viewed, onboarding progress, app lifecycle events, read and purchase funnel events, feature-flag assignments, timestamps, and aggregate analysis counts. These events use your random Clarity user ID and may include app version, operating system, device type, IP address, and similar technical data. Session replay, advertising identifiers, and automatic tap capture are disabled, and conversation text, screenshots, backstory, and person labels are not sent to PostHog.</p>
+        </section>
+
+        <section class="legal-section" id="privacy-screenshots">
+          <h3>How screenshots are handled</h3>
+          <p>Only images you select through Apple’s photo picker are prepared for upload. Clarity re-encodes them and removes embedded metadata such as EXIF and GPS. Encrypted server-side screenshot objects are deleted after analysis succeeds or fails; a storage lifecycle rule removes abandoned copies within about one day. The resulting transcript and analysis are stored with your account so you can reopen the read.</p>
+        </section>
+
+        <section class="legal-section" id="privacy-ai">
+          <h3>AI processing</h3>
+          <p>To create a read, we send OpenAI selected screenshot copies together with your person label, relevant onboarding profile, optional backstory, detected platform and language, and, when applicable, a summary of the prior read for that person. OpenAI processes this content to classify and analyze the conversation. OpenAI states that API data is not used to train its models by default; standard abuse-monitoring logs may retain content for up to 30 days unless reduced-retention controls apply, with limited safety and legal exceptions.</p>
+        </section>
+
+        <section class="legal-section" id="privacy-use">
+          <h3>How we use information</h3>
+          <p>We use information to create and personalize reads; maintain history; authenticate and secure accounts; process subscriptions, quotas, and referrals; provide support; measure reliability and product usage; test features; prevent fraud and abuse; enforce our Terms of Service; and comply with law. We do not use conversation content for advertising.</p>
+        </section>
+
+        <section class="legal-section" id="privacy-disclosure">
+          <h3>When information is disclosed</h3>
+          <p>We disclose information only as needed to operate Clarity: to Amazon Web Services for hosting, databases, logs, and transient screenshot storage; OpenAI for AI analysis; PostHog for product analytics; Apple for photo selection, device integrity, and App Store purchases; Superwall and its webhook delivery provider for subscription lifecycle events; professional advisers and vendors under confidentiality duties; authorities when legally required; or a successor in a merger, financing, or sale. We require service providers to protect data consistently with this policy and applicable law.</p>
+        </section>
+
+        <section class="legal-section" id="privacy-no-sale">
+          <h3>What we do not do</h3>
+          <p>We do not sell personal information, share it for cross-context behavioral advertising, serve third-party ads, collect your contacts, request precise location or microphone access, use the advertising identifier, or enable analytics session replay.</p>
+        </section>
+
+        <section class="legal-section" id="privacy-retention">
+          <h3>Retention</h3>
+          <p>Server screenshot objects are normally removed at the end of analysis and no later than about one day if a job is abandoned. Operational logs are generally kept up to 90 days. Account details, onboarding answers, names or labels, backstory, read results, and referral records are kept while your account is active. After account deletion, product analytics tied only to the deleted random account ID may remain for up to 90 days before deletion or deidentification, and deleted database data may remain in encrypted backups for up to 30 days.</p>
+          <p>Purchase, subscription, credit-ledger, and webhook records may be retained longer, separated from your deleted account, for accounting, transaction integrity, fraud prevention, dispute handling, and legal obligations.</p>
+        </section>
+
+        <section class="legal-section" id="privacy-device">
+          <h3>Data on your device</h3>
+          <p>Clarity stores protected copies of uploaded screenshots in the app’s Application Support directory and stores account tokens in the iOS Keychain. Screenshots may be included in your encrypted iCloud device backup depending on your Apple settings. Deleting the app generally removes its local screenshot files, but Keychain items can survive an app deletion. Deleting the app does not delete server records or cancel an App Store subscription.</p>
+        </section>
+
+        <section class="legal-section" id="privacy-rights">
+          <h3>Your choices and rights</h3>
+          <p>You can choose which photos to submit, cancel a subscription in App Store settings, and permanently delete your Clarity account and associated content from Settings in the app. Account deletion does not cancel an App Store subscription. You may also contact us to request access, correction, or export of account information or to object to analytics. We may ask for your support ID and other information needed to verify the request. Rights vary by location, and lawful exceptions may apply. We will not discriminate against you for exercising a privacy right.</p>
+        </section>
+
+        <section class="legal-section" id="privacy-age">
+          <h3>Age limits</h3>
+          <p>Clarity is for adults 18 and older. We do not knowingly collect personal information from children. Do not upload a conversation involving a minor. If you believe a child has provided information to Clarity, contact us so we can investigate and delete it.</p>
+        </section>
+
+        <section class="legal-section" id="privacy-security">
+          <h3>Security and international processing</h3>
+          <p>We use measures designed to protect information, including transport encryption, encrypted cloud storage, protected device files, short-lived access tokens, and Apple device-integrity checks. No system is completely secure. Clarity and its providers process information in the United States, including AWS infrastructure in the United States, and may process it in other locations where providers operate.</p>
+        </section>
+
+        <section class="legal-section" id="privacy-changes">
+          <h3>Changes to this policy</h3>
+          <p>We may update this policy as the product or law changes. We will post the new date and provide additional notice before a material change takes effect when required. We will seek consent if a material new use requires it.</p>
+        </section>
+
+        <section class="legal-section" id="privacy-contact">
+          <h3>Contact</h3>
+          <div>
+            <p>For privacy questions or requests, use Contact Support in the app or email us. If your request concerns a conversation uploaded by someone else, provide enough information for us to locate it without sending additional sensitive content.</p>
+            <a class="contact-line" href="mailto:hello@gnsheep.com?subject=Clarity%20privacy%20request">hello@gnsheep.com</a>
+          </div>
+        </section>
+      </article>
+
+      <article id="terms" aria-labelledby="terms-title">
+        <header>
+          <h2 id="terms-title">Terms of Service</h2>
+          <p class="lede">These Terms of Service (“Terms”) govern your access to and use of Clarity. “Clarity,” “we,” “us,” and “our” refer to the operator of the Clarity app and service.</p>
+        </header>
+
+        <section class="legal-section" id="terms-agreement">
+          <h3>Agreement to these terms</h3>
+          <p>By downloading, accessing, or using Clarity, you agree to these Terms and our Privacy Policy. If you do not agree, do not use Clarity. If you use Clarity on behalf of an organization, you represent that you have authority to bind that organization.</p>
+        </section>
+
+        <section class="legal-section" id="terms-eligibility">
+          <h3>Who may use Clarity</h3>
+          <p>You must be at least 18 years old and legally able to enter into a contract. Clarity is not intended for children, and you may not upload conversations involving anyone you know or reasonably suspect is under 18.</p>
+        </section>
+
+        <section class="legal-section" id="terms-service">
+          <h3>What Clarity does</h3>
+          <p>Clarity uses automated systems, including artificial intelligence, to read conversation screenshots and return an interpretation, signal labels, and a suggested next move. Results may be incomplete, inaccurate, biased, or inappropriate for your circumstances. They are a perspective to weigh, not a statement of fact or professional advice. You remain responsible for your decisions and communications.</p>
+        </section>
+
+        <section class="legal-section" id="terms-account">
+          <h3>Your account</h3>
+          <p>Clarity automatically creates a pseudonymous account identified by random IDs rather than asking for your name or email. Keep your device and account credentials secure. You are responsible for activity through your account. Contact support promptly if you believe your account has been misused.</p>
+        </section>
+
+        <section class="legal-section" id="terms-content">
+          <h3>Your content</h3>
+          <p>You keep any rights you have in screenshots, backstory, names or labels, and other material you submit (“Your Content”). You give Clarity a limited, worldwide, non-exclusive, royalty-free license to host, copy, transmit, analyze, format, and otherwise process Your Content only as needed to operate, secure, support, and improve the service.</p>
+          <p>Because Your Content may contain another person’s private information or copyrighted material, you represent that you have a lawful right to submit it and permit this processing. Do not upload more information than is needed for the read.</p>
+        </section>
+
+        <section class="legal-section" id="terms-use">
+          <h3>Acceptable use</h3>
+          <div>
+            <p>Do not use Clarity to:</p>
+            <p>stalk, harass, threaten, exploit, deceive, discriminate against, or monitor another person; upload content involving minors, group chats, sexually explicit material, or content you lack the right to share; violate law or another person’s privacy or intellectual-property rights; probe or bypass security, quotas, or payment controls; introduce malware or interfere with the service; automate access without permission; or resell Clarity or its output.</p>
+          </div>
+        </section>
+
+        <section class="legal-section" id="terms-subscriptions">
+          <h3>Subscriptions and purchases</h3>
+          <div>
+            <p>Paid plans are weekly auto-renewing subscriptions purchased through Apple’s App Store. Before purchase, the app shows the current localized price, the weekly renewal term, the included read quota, and any introductory offer for which Apple determines you are eligible. Current tiers may include one, two, or four reads per weekly renewal period. Quotas reset each renewal period, and unused reads do not roll over.</p>
+            <p>Your Apple account is charged when you confirm the purchase. The subscription renews until you cancel it in your Apple account settings. Deleting the app or your Clarity account does not cancel billing. Apple processes payments, cancellations, upgrades, downgrades, and refund requests under Apple’s terms. Changes to a plan may take effect immediately or at the next renewal as determined by Apple.</p>
+          </div>
+        </section>
+
+        <section class="legal-section" id="terms-referrals">
+          <h3>Referrals and promotions</h3>
+          <p>Referral credits, introductory offers, TestFlight access, and other promotions have no cash value, may be subject to eligibility requirements and limits, and may be changed or withdrawn. Do not spam, misrepresent Clarity, create fake accounts, or manipulate referrals. We may withhold or reverse rewards obtained through abuse, fraud, or error.</p>
+        </section>
+
+        <section class="legal-section" id="terms-safety">
+          <h3>Safety and professional advice</h3>
+          <p>Clarity is not therapy, medical care, legal advice, crisis support, or an emergency service. Do not rely on it to assess danger, abuse, self-harm, or another person’s intentions. If you or someone else may be in immediate danger, contact local emergency services. In the United States, you may call or text 988 for the Suicide &amp; Crisis Lifeline or contact the National Domestic Violence Hotline at 1-800-799-7233.</p>
+        </section>
+
+        <section class="legal-section" id="terms-ip">
+          <h3>Our service and intellectual property</h3>
+          <p>Clarity and its software, design, branding, and service-generated materials are owned by us or our licensors and protected by law. We give you a personal, limited, revocable, non-exclusive, non-transferable license to use the app for its intended purpose. Except where law allows it, you may not copy, modify, distribute, sell, lease, reverse engineer, or create derivative works from the service.</p>
+        </section>
+
+        <section class="legal-section" id="terms-feedback">
+          <h3>Feedback</h3>
+          <p>If you send ideas or feedback, you allow us to use them without restriction or compensation. This does not give us ownership of Your Content.</p>
+        </section>
+
+        <section class="legal-section" id="terms-availability">
+          <h3>Availability and changes</h3>
+          <p>We may change, suspend, or discontinue features, limits, promotions, or the service. We may release experimental features and may correct errors in pricing, quotas, or rewards. We do not guarantee that Clarity will always be available, secure, or error-free, or that stored content will never be lost. Keep any original screenshots or information you need.</p>
+        </section>
+
+        <section class="legal-section" id="terms-third-parties">
+          <h3>Apple and other services</h3>
+          <p>Your use of Apple’s App Store, photo picker, device-integrity services, and subscriptions is also subject to Apple’s terms. Clarity also depends on service providers described in the Privacy Policy. We are responsible for Clarity, not for third-party services outside our control. Apple is not responsible for maintenance or support of Clarity, and Apple may enforce these Terms as a third-party beneficiary where its agreements provide.</p>
+        </section>
+
+        <section class="legal-section" id="terms-termination">
+          <h3>Suspension and termination</h3>
+          <p>You may stop using Clarity at any time. We may restrict or end access when reasonably necessary to protect users or the service, investigate abuse, comply with law, or address a material violation of these Terms. Termination does not automatically cancel an App Store subscription. Sections that by their nature should survive termination, including ownership, disclaimers, liability limits, indemnity, and dispute terms, will continue to apply.</p>
+        </section>
+
+        <section class="legal-section" id="terms-disclaimers">
+          <h3>Disclaimers</h3>
+          <p>To the fullest extent permitted by law, Clarity is provided “as is” and “as available.” We disclaim implied warranties, including merchantability, fitness for a particular purpose, title, and non-infringement. We do not warrant the accuracy of AI output, the accuracy of any inferred motive or pattern, or any particular relationship outcome. Some jurisdictions do not allow certain disclaimers, so parts of this section may not apply to you.</p>
+        </section>
+
+        <section class="legal-section" id="terms-liability">
+          <h3>Limits on liability</h3>
+          <p>To the fullest extent permitted by law, Clarity and its operators, affiliates, and service providers will not be liable for indirect, incidental, special, consequential, exemplary, or punitive damages, or for lost data, profits, goodwill, or opportunities arising from the service. Our total liability for claims relating to Clarity will not exceed the greater of $100 or the amount you paid for Clarity in the 12 months before the event giving rise to the claim. This limit does not apply where prohibited by law.</p>
+        </section>
+
+        <section class="legal-section" id="terms-indemnity">
+          <h3>Indemnity</h3>
+          <p>To the extent permitted by law, you agree to defend, indemnify, and hold Clarity and its operators harmless from third-party claims, damages, liabilities, and reasonable costs arising from Your Content, your misuse of the service, or your violation of these Terms or another person’s rights.</p>
+        </section>
+
+        <section class="legal-section" id="terms-law">
+          <h3>Governing law and disputes</h3>
+          <p>Before filing a claim, contact us and give us 30 days to try to resolve it informally. Except where local consumer law requires otherwise, these Terms are governed by California law, without regard to conflict-of-law rules, and disputes will be brought in state or federal courts located in California. You may also have rights to bring a claim in your home jurisdiction.</p>
+        </section>
+
+        <section class="legal-section" id="terms-general">
+          <h3>General terms</h3>
+          <p>If a provision is unenforceable, the rest of these Terms remains in effect. Our failure to enforce a provision is not a waiver. You may not transfer these Terms without our consent; we may transfer them as part of a reorganization, financing, merger, or sale. These Terms and the Privacy Policy are the entire agreement between you and us about Clarity unless additional terms are presented for a specific feature.</p>
+        </section>
+
+        <section class="legal-section" id="terms-changes">
+          <h3>Changes to these terms</h3>
+          <p>We may update these Terms as Clarity evolves. We will post the new effective date and provide additional notice in the app when changes materially affect your rights. Continuing to use Clarity after updated Terms take effect means you accept them. If you do not agree, stop using the service and cancel any subscription through Apple.</p>
+        </section>
+
+        <section class="legal-section" id="terms-contact">
+          <h3>Contact</h3>
+          <div>
+            <p>Questions about these Terms can be sent to:</p>
+            <a class="contact-line" href="mailto:hello@gnsheep.com?subject=Clarity%20terms%20question">hello@gnsheep.com</a>
+          </div>
+        </section>
+      </article>
+    </main>
+  </div>
+
+  <footer>
+    Clarity · Privacy Policy and Terms of Service · July 26, 2026
+  </footer>
+</body>
+</html>
