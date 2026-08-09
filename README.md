@@ -17,7 +17,7 @@ Use the deployed page URL for the combined legal page. Direct document links are
 
 ## Before publishing
 
-- Confirm `hello@gnsheep.com` is monitored for support, privacy, and legal requests.
+- Confirm `support@gutfeelapp.com` is monitored for support, privacy, and legal requests.
 - Confirm California is the intended governing law and add the operator's legal name and mailing address when available.
 - Have qualified counsel review both documents for the markets where Clarity will be offered.
 - Keep `index.html` synchronized with `clarity/frontend/Clarity/SettingsDrawer.swift` when the product's data flows, vendors, retention, or pricing change.
